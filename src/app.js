@@ -4,11 +4,7 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
-window.onload = function() {
-  generarCartas();
-};
-
-function generarCartas() {
+window.generarCartas = function() {
   //write your code here
 
   const simbolos = ["♥", "♣", "♦", "♠"];
@@ -45,6 +41,4 @@ function generarCartas() {
   numeroElemento.style.color = color;
   simboloArriba.style.color = color;
   simboloAbajo.style.color = color;
-}
-const randomBottom = document.querySelector(".boton");
-document.addEventListener("click", generarCartas());
+};
